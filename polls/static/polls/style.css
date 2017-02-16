@@ -1,0 +1,57 @@
+a {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+img{
+    animation:spin 3s linear infinite;
+}
+
+spin{
+    0%{
+	rotate;
+    }
+}
+
+body{
+    background:orange;
+}
+
+li:first-letter{
+    font-size:200%;
+}
+
+li:nth-child(odd){
+    background-color:#AAAAAA;
+}
+
+li:nth-child(even){
+    background-color:#CCCCCC;
+}
+
+ul{
+    list-style-type: None;
+    margin-left: 0;
+}
+
+ul > li {
+  counter-increment: customlistcounter;
+  margin:1em;
+  padding:1em;
+}
+
+ul > li:before {
+  content: counter(customlistcounter) " ";
+  font-weight: bold;
+  font-size:200%;
+  float: left;
+  border:solid white;
+  border-radius:100%;
+  background-color:#AAAAFF;
+}
+
+ul:first-child {
+  counter-reset: customlistcounter;
+}
